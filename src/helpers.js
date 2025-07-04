@@ -42,7 +42,9 @@ async function ejecutar() {
         limpiarPantalla();
         await esperar(1500);
         console.log("cerrando programa..");
+        await esperar(1500);
         rl.close();
+        break;
       case "2":
         limpiarPantalla();
         await esperar(500)
@@ -79,4 +81,4 @@ function esperar(ms) { // dentro de los parentesis pondremos los milisegundos a 
   return new Promise(resolve => setTimeout(resolve, ms)); // nos devuelve una promesa que se cumple luego del tiempo en milisegundos.
 }
 // exportamos las funciones.
-module.exports = {esperar, mostrarTextoMenu, volver, preguntar, ejecutar, rl} 
+module.exports = {esperar, mostrarTextoMenu, volver, preguntar, ejecutar, rl, limpiarPantalla} 

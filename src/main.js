@@ -1,5 +1,5 @@
 // declaracion de valores constantes
-const { esperar, mostrarTextoMenu, volver, preguntar, ejecutar, rl} = require("./helpers"); // importamos las funciones de src/helpers.
+const { esperar, mostrarTextoMenu, volver, preguntar, ejecutar, rl, limpiarPantalla} = require("./helpers"); // importamos las funciones de src/helpers.
 const { error } = require("console");
 
 // ahora si, a iniciar a definir las funciones principales del programa.
