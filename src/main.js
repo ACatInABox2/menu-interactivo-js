@@ -1,32 +1,12 @@
 // declaracion de valores constantes
-const readline = require("readline");
-const { esperar, limpiarPantalla, mostrarTextoMenu} = require("./helpers"); // importamos las funciones de src/helpers.
+const { esperar, mostrarTextoMenu, volver, preguntar, ejecutar, rl} = require("./helpers"); // importamos las funciones de src/helpers.
 const { error } = require("console");
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-}); // esto es parte para crear la interfaz para interactuar con el usuario en consola.
 
 // ahora si, a iniciar a definir las funciones principales del programa.
 
-function preguntar(mensaje) { // creamos la rl.question en forma de promesa para recursividad.
-  return new Promise((resolve) => {
-    rl.question(mensaje, (respuesta) => {
-      resolve(respuesta);
-    });
-  });
-}
-
-async function ejecutar() {
-    limpiarPantalla();
-    mostrarTextoMenu(1);
-    
-}
-
 //funcion: Iniciar(), nos servira para iniciar el programa.
 function Iniciar() { // funcion a ejecutar para iniciar el programa
-    limpiarPantalla() // limpia la pantalla antes de iniciar.
+    // limpiarPantalla() // limpia la pantalla antes de iniciar.
     console.log('¿desea iniciar el programa?') // mensaje 
     rl.question('1 = Si/Yes, 2 = No', async (respuesta1) => { // pregunta si iniciar el programa
         const opcion = Number(respuesta1) // convertimos la respuesta en un numero y la guardamos en una constante llamada opcion
