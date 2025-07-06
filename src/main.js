@@ -2,6 +2,7 @@
 const { esperar, mostrarTextoMenu, volver, preguntar, ejecutar, rl, limpiarPantalla, error1Mostrar} = require("./helpers"); // importamos las funciones de src/helpers.
 const { error } = require("console");
 
+
 // ahora si, a iniciar a definir las funciones principales del programa.
 
 //funcion: Iniciar(), nos servira para iniciar el programa.
@@ -24,4 +25,4 @@ function Iniciar() { // funcion a ejecutar para iniciar el programa
         }
     })
 }
- Iniciar()
+ module.exports = {Iniciar}
