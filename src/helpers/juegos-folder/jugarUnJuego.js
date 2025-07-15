@@ -1,11 +1,10 @@
-
-const {esperar} = require('./sistema-folder/delay.js');
-
-const {volver} = require('./sistema-folder/volver.js');
-const {mostrarError1} = require('./sistema-folder/mostrarError1.js');
-
-
-
+const {limpiarPantalla} = require('../ui-folder/limpiarPantalla');
+const {mostrarTextoJuego} = require('./mostrarTextoJuego');
+const {preguntar} = require('../ui-folder/preguntar');
+const {iniciarJuego} = require('./iniciarJuego');
+const {adivinarUnNumero} = require('./adivinarUnNumero');
+const {volver} = require('../sistema-folder/volver');
+const {operacionesRapidas} = require('./operacionesRapidas');
 
 async function jugarUnJuego() {
   limpiarPantalla();
@@ -30,4 +29,4 @@ async function jugarUnJuego() {
   }
 }
 
-module.exports = {jugarUnJuego}
+module.exports = {jugarUnJuego};

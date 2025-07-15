@@ -1,8 +1,8 @@
-const {rl} = require("./ui.js");
+const { rl } = require('./readline.js');
 
 function despedida() {
   console.log("Gracias por usar el programa.");
-  rl.close();
+  process.exit();
 }
 
 module.exports = {despedida};

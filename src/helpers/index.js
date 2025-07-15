@@ -1,9 +1,39 @@
 
-const { rl, preguntar, mostrarTextoMenu, limpiarPantalla } = require('./ui');
+const {rl} = require('./ui.js');
 
-const { esperar, volver, ejecutar, error1Mostrar, datosPrograma} = require('./sistema');
+const {preguntar} = require('./ui-folder/preguntar.js');
 
-const { adivinarUnNumero, volverAJugar, jugarUnJuego, operacionesRapidas, iniciarJuego, mostrarTextoJuego} = require('./juegos');
+const {despedida} = require('./sistema.js');
+
+const {Iniciar} = require('./sistema-folder/iniciar.js')
+
+const {ejecutar} = require('./sistema-folder/ejecutar.js');
+
+const {volver} = require('./sistema-folder/volver.js');
+
+const {datosPrograma} = require('./sistema-folder/datosPrograma.js');
+
+const {mostrarError1} = require('./sistema-folder/mostrarError1.js');
+
+const {esperar} = require('./sistema-folder/delay.js');
+
+const {mostrarTextoJuego} = require('./juegos-folder/mostrarTextoJuego.js');
+
+const {mostrarTextoMenu} = require('./ui-folder/mostrarTextoMenu.js');
+
+const {limpiarPantalla} = require('./ui-folder/limpiarPantalla.js');
+
+const {jugarUnJuego} = require('./juegos.js');
+
+const {adivinarUnNumero} = require('./juegos-folder/adivinarUnNumero.js');
+
+const {volverAJugar} = require('./juegos-folder/volverAJugar.js');
+
+const {operacionesRapidas} = require('./juegos-folder/operacionesRapidas.js');
+
+const {iniciarJuego} = require('./juegos-folder/iniciarJuego.js');
+
+const {numeroAleatorio} = require('./sistema-folder/numeroAleatorio.js');
 
 module.exports = {
   rl,
@@ -13,12 +43,15 @@ module.exports = {
   esperar,
   volver,
   ejecutar,
-  error1Mostrar,
+  mostrarError1,
   datosPrograma,
   adivinarUnNumero,
   volverAJugar,
   jugarUnJuego,
   operacionesRapidas,
   iniciarJuego,
-  mostrarTextoJuego
+  mostrarTextoJuego,
+  numeroAleatorio,
+  despedida,
+  Iniciar
 };
