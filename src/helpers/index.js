@@ -1,9 +1,9 @@
 
-const {rl} = require('./ui.js');
+const {rl} = require('../helpers/sistema-folder/readline.js');
 
 const {preguntar} = require('./ui-folder/preguntar.js');
 
-const {despedida} = require('./sistema.js');
+const {despedida} = require('../helpers/ui.js');
 
 const {Iniciar} = require('./sistema-folder/iniciar.js')
 
