@@ -9,7 +9,7 @@ const { despedida } = require('./despedida');
 
 
 async function ejecutar() {
-  const {jugarUnJuego} = require('../juegos-folder/jugarUnJuego');
+  const {jugarUnJuego} = require('../juegos-folder/dependencias-folder/jugarUnJuego');
   const {volver} = require('./volver');
       limpiarPantalla();
       mostrarTextoMenu();

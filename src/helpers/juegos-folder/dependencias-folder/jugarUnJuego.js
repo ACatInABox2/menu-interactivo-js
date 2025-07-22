@@ -1,10 +1,10 @@
-const {limpiarPantalla} = require('../ui-folder/limpiarPantalla');
+const {limpiarPantalla} = require('../../ui-folder/limpiarPantalla');
 const {mostrarTextoJuego} = require('./mostrarTextoJuego');
-const {preguntar} = require('../ui-folder/preguntar');
+const {preguntar} = require('../../ui-folder/preguntar');
 const {iniciarJuego} = require('./iniciarJuego');
-const {adivinarUnNumero} = require('./adivinarUnNumero');
-const {volver} = require('../sistema-folder/volver');
-const {operacionesRapidas} = require('./operacionesRapidas');
+const {adivinarUnNumero} = require('../adivinarUnNumero');
+const {volver} = require('../../sistema-folder/volver');
+const {operacionesRapidas} = require('../operacionesRapidas');
 
 async function jugarUnJuego() {
   limpiarPantalla();

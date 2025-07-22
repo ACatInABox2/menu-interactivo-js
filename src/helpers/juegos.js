@@ -1,10 +1,10 @@
-
-const {esperar} = require('./sistema-folder/delay.js');
-
 const {volver} = require('./sistema-folder/volver.js');
-const {mostrarError1} = require('./sistema-folder/mostrarError1.js');
-
-
+const {limpiarPantalla} = require('./ui-folder/limpiarPantalla.js');
+const {mostrarTextoJuego} = require('./juegos-folder/dependencias-folder/mostrarTextoJuego.js');
+const {preguntar} = require('./ui-folder/preguntar.js');
+const {iniciarJuego} = require('./juegos-folder/dependencias-folder/iniciarJuego.js');
+const {adivinarUnNumero} = require('./juegos-folder/adivinarUnNumero.js');
+const {operacionesRapidas} = require('./juegos-folder/operacionesRapidas.js');
 
 
 async function jugarUnJuego() {

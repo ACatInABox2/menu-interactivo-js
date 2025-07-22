@@ -1,4 +1,4 @@
-const {esperar} = require('../sistema-folder/delay');
+const {esperar} = require('../../sistema-folder/delay');
 
 async function iniciarJuego() {
    const msg = "Iniciando juego.."

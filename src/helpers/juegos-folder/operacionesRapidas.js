@@ -1,7 +1,7 @@
 const {limpiarPantalla} = require('../ui-folder/limpiarPantalla');
 const {preguntar} = require('../ui-folder/preguntar');
 const {numeroAleatorio} = require('../sistema-folder/numeroAleatorio');
-const {volverAJugar} = require('./volverAJugar');
+const {volverAJugar} = require('./dependencias-folder/volverAJugar');
 
 async function operacionesRapidas(c, d) {
   limpiarPantalla();

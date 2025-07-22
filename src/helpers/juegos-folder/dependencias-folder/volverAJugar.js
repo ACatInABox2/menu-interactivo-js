@@ -1,6 +1,6 @@
-const {preguntar} = require('../ui-folder/preguntar');
-const {volver} = require('../sistema-folder/volver');
-const {mostrarError1} = require('../sistema-folder/mostrarError1');
+const {preguntar} = require('../../ui-folder/preguntar');
+const {volver} = require('../../sistema-folder/volver');
+const {mostrarError1} = require('../../sistema-folder/mostrarError1');
 
 async function volverAJugar(callback) {
   const opcion = await preguntar("¿Volver a jugar? Si = 1, No = 2 R: ");

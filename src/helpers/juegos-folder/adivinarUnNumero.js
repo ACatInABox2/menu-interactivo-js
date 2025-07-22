@@ -1,6 +1,6 @@
 const {limpiarPantalla} = require('../ui-folder/limpiarPantalla');
 const {preguntar} = require('../ui-folder/preguntar');
-const {volverAJugar} = require('./volverAJugar');
+const {volverAJugar} = require('./dependencias-folder/volverAJugar');
 const {numeroAleatorio} = require('../sistema-folder/numeroAleatorio');
 
 async function adivinarUnNumero() {

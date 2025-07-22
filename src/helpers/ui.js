@@ -1,7 +1,7 @@
 
 function despedida() {
   console.log("Gracias por usar el programa.");
-  const {rl} = require("./ui.js");
+  const {rl} = require('./sistema-folder/despedida');
   rl.close();
 }
 

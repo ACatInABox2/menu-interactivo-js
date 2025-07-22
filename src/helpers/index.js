@@ -17,7 +17,7 @@ const {mostrarError1} = require('./sistema-folder/mostrarError1.js');
 
 const {esperar} = require('./sistema-folder/delay.js');
 
-const {mostrarTextoJuego} = require('./juegos-folder/mostrarTextoJuego.js');
+const {mostrarTextoJuego} = require('./juegos-folder/dependencias-folder/mostrarTextoJuego.js');
 
 const {mostrarTextoMenu} = require('./ui-folder/mostrarTextoMenu.js');
 
@@ -27,11 +27,11 @@ const {jugarUnJuego} = require('./juegos.js');
 
 const {adivinarUnNumero} = require('./juegos-folder/adivinarUnNumero.js');
 
-const {volverAJugar} = require('./juegos-folder/volverAJugar.js');
+const {volverAJugar} = require('./juegos-folder/dependencias-folder/volverAJugar.js');
 
 const {operacionesRapidas} = require('./juegos-folder/operacionesRapidas.js');
 
-const {iniciarJuego} = require('./juegos-folder/iniciarJuego.js');
+const {iniciarJuego} = require('./juegos-folder/dependencias-folder/iniciarJuego.js');
 
 const {numeroAleatorio} = require('./sistema-folder/numeroAleatorio.js');
 
